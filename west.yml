@@ -40,6 +40,9 @@ manifest:
     - name: bosch
       url-base: https://github.com/boschsensortec
 
+    - name: vision-metering-sdk-mcuboot
+      url-base: https://bitbucket.org/visionmetering/sdk-mcuboot
+
   # If not otherwise specified, the projects below should be obtained
   # from the ncs remote.
   defaults:
@@ -127,10 +130,13 @@ manifest:
           upstream-url: https://github.com/Wi-FiQuickTrack/Wi-FiQuickTrack-ControlAppC
           upstream-sha: 1225729e8d84075f03bf9fc51eee85d84dfb0091
           compare-by-default: true
-    - name: mcuboot
-      repo-path: sdk-mcuboot
-      revision: v2.0.99-ncs1-1
-      path: bootloader/mcuboot
+
+    - name: sdk-mcuboot                           #any name, shown green in the logs
+      repo-path: sdk-mcuboot                      #name of the repo
+      path: bootloader/mcuboot                    #folder location
+      remote: vision-metering-sdk-mcuboot         #remote url defined above
+      revision: vision_mcuboot_v2.1.0.1           #commit SHA: 905f109fb742cedcd3302925805a0e8d0a3fcab2     tag: vision_v2.0.99-ncs1
+
     - name: qcbor
       url: https://github.com/laurencelundblade/QCBOR
       revision: 751d36583a9ce1a640900c57e13c9b6b8f3a2ba2
