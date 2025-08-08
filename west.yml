@@ -44,7 +44,7 @@ manifest:
       url-base: https://bitbucket.org/visionmetering/sdk-mcuboot
 
     - name: vision-metering-zephyr
-      url-base: https://github.com/jvp-vmllc
+      url-base: https://bitbucket.org/visionmetering/zephyr
 
   # If not otherwise specified, the projects below should be obtained
   # from the ncs remote.
